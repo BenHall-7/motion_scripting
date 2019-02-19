@@ -1,0 +1,15 @@
+Common:
+Z-drop item without using Z-air
+Ledge-hogging
+Meteor cancelling
+Remove off-the-top blast KOs
+Tripping
+Gliding
+
+Fox/Falco:
+SpecialS goes into SpecialFall
+SpecialS can be shortened by pressing B
+
+Completed:
+DACUS
+Ledge regrab intangibility

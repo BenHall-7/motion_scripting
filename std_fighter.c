@@ -4728,46 +4728,25 @@ void func_196()
 {
     int var0;
     int var1;
-    float var2;
+    int var2;
     float var3;
     float var4;
     float var5;
     float var6;
-    float var7;
+    int var7;
     float var8;
     float var9;
     float var10;
-    int var11;
-    float var12;
-    float var13;
-    float var14;
-    float var15;
-    int var16;
-    float var17;
-    float var18;
-    float var19;
-    float var20;
-    int var21;
+    float var11;
+    int var12;
     if (GroundModuleImpl(0x2724))
     {
         var0 = 0x1;
         var1 = 0;
-        if (global4 == 0x73)
+        if (global4 == 0x72 || global4 == 0x73)
         {
-            var2 = PostureModuleImplFloat.get_lr();
-            var3 = GroundModuleImplFloat(0x1);
-            var4 = GroundModuleImplFloat(0x2);
-            var5 = PostureModuleImplFloat.get_pos_z();
-            var6 = MotionModuleImplFloat(0x7);
-            var7 = MotionModuleImplFloat(0x8);
-            var8 = var3 + var7 * var2;
-            var9 = var4 + var6;
-            var10 = var5;
             ControlModuleImpl(0x2714, 0xd, 0);
-            if (WorkModuleImpl.is_flag(0x20000059) == 0x1)
-            {
-                HitModuleImpl(0, 0x2);
-            }
+            HitModuleImpl(0, 0x2);
             var1 = 0x1;
         }
         else if (global4 == 0x75 || global4 == 0x76 || global4 == 0x77 || global4 == 0x78)
@@ -4776,43 +4755,40 @@ void func_196()
         }
         else if (global4 == 0x74)
         {
-            var11 = (int)((float)WorkModuleImpl.get_int(0x1200006f) * WorkModuleImplFloat.get_float(0x30000fc));
-            WorkModuleImpl.set_int(var11, 0x11000002);
-            if (WorkModuleImpl.is_flag(0x20000059) == 0x1)
-            {
-                var12 = (float)WorkModuleImpl.get_int(0x12000076);
-                var13 = (float)WorkModuleImpl.get_int(0x12000077);
-                var14 = (float)WorkModuleImpl.get_int(0x12000078);
-                var15 = (float)WorkModuleImpl.get_int(0x12000079);
-                var16 = WorkModuleImpl.get_int(0x1200007a);
-                var17 = (float)WorkModuleImpl.get_int(0x10000055);
-                var18 = var12 * var17 / var13;
-                if (var18 > var12)
-                {
-                    var18 = var12;
-                }
-                else if (var18 < (float)0)
-                {
-                    var18 = (float)0;
-                }
-                var19 = DamageModuleImplFloat(0);
-                var20 = var14 - var14 * var19 / var15;
-                if (var20 > var14)
-                {
-                    var20 = var14;
-                }
-                else if (var20 < (float)0)
-                {
-                    var20 = (float)0;
-                }
-                var21 = (int)(var18 + var20);
-                if (var21 < var16)
-                {
-                    var21 = var16;
-                }
-                HitModuleImpl(0x2, var21);
-                WorkModuleImpl.off_flag(0x20000059);
-            }
+            var2 = (int)((float)WorkModuleImpl.get_int(0x1200006f) * WorkModuleImplFloat.get_float(0x30000fc));
+            WorkModuleImpl.set_int(var2, 0x11000002);
+			var3 = (float)WorkModuleImpl.get_int(0x12000076);
+			var4 = (float)WorkModuleImpl.get_int(0x12000077);
+			var5 = (float)WorkModuleImpl.get_int(0x12000078);
+			var6 = (float)WorkModuleImpl.get_int(0x12000079);
+			var7 = WorkModuleImpl.get_int(0x1200007a);
+			var8 = (float)WorkModuleImpl.get_int(0x10000055);
+			var9 = var3 * var8 / var4;
+			if (var9 > var3)
+			{
+				var9 = var3;
+			}
+			else if (var9 < (float)0)
+			{
+				var9 = (float)0;
+			}
+			var10 = DamageModuleImplFloat(0);
+			var11 = var5 - var5 * var10 / var6;
+			if (var11 > var5)
+			{
+				var11 = var5;
+			}
+			else if (var11 < (float)0)
+			{
+				var11 = (float)0;
+			}
+			var12 = (int)(var9 + var11);
+			if (var12 < var7)
+			{
+				var12 = var7;
+			}
+			HitModuleImpl(0x2, var12);
+			WorkModuleImpl.off_flag(0x20000059);
             var1 = 0x1;
         }
         else if (global4 == 0x79)

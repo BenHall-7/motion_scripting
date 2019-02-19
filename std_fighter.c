@@ -4757,38 +4757,38 @@ void func_196()
         {
             var2 = (int)((float)WorkModuleImpl.get_int(0x1200006f) * WorkModuleImplFloat.get_float(0x30000fc));
             WorkModuleImpl.set_int(var2, 0x11000002);
-			var3 = (float)WorkModuleImpl.get_int(0x12000076);
-			var4 = (float)WorkModuleImpl.get_int(0x12000077);
-			var5 = (float)WorkModuleImpl.get_int(0x12000078);
-			var6 = (float)WorkModuleImpl.get_int(0x12000079);
-			var7 = WorkModuleImpl.get_int(0x1200007a);
-			var8 = (float)WorkModuleImpl.get_int(0x10000055);
-			var9 = var3 * var8 / var4;
-			if (var9 > var3)
-			{
-				var9 = var3;
-			}
-			else if (var9 < (float)0)
-			{
-				var9 = (float)0;
-			}
-			var10 = DamageModuleImplFloat(0);
-			var11 = var5 - var5 * var10 / var6;
-			if (var11 > var5)
-			{
-				var11 = var5;
-			}
-			else if (var11 < (float)0)
-			{
-				var11 = (float)0;
-			}
-			var12 = (int)(var9 + var11);
-			if (var12 < var7)
-			{
-				var12 = var7;
-			}
-			HitModuleImpl(0x2, var12);
-			WorkModuleImpl.off_flag(0x20000059);
+            var3 = (float)WorkModuleImpl.get_int(0x12000076);
+            var4 = (float)WorkModuleImpl.get_int(0x12000077);
+            var5 = (float)WorkModuleImpl.get_int(0x12000078);
+            var6 = (float)WorkModuleImpl.get_int(0x12000079);
+            var7 = WorkModuleImpl.get_int(0x1200007a);
+            var8 = (float)WorkModuleImpl.get_int(0x10000055);
+            var9 = var3 * var8 / var4;
+            if (var9 > var3)
+            {
+                var9 = var3;
+            }
+            else if (var9 < (float)0)
+            {
+                var9 = (float)0;
+            }
+            var10 = DamageModuleImplFloat(0);
+            var11 = var5 - var5 * var10 / var6;
+            if (var11 > var5)
+            {
+                var11 = var5;
+            }
+            else if (var11 < (float)0)
+            {
+                var11 = (float)0;
+            }
+            var12 = (int)(var9 + var11);
+            if (var12 < var7)
+            {
+                var12 = var7;
+            }
+            HitModuleImpl(0x2, var12);
+            WorkModuleImpl.off_flag(0x20000059);
             var1 = 0x1;
         }
         else if (global4 == 0x79)

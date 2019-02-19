@@ -6729,16 +6729,21 @@ void func_273()
         func_16(0xe, 0);
         return;
     }
-    if (WorkModuleImpl.check_strans(0x1e00006f) == 0x1 && func_88() <= WorkModuleImplFloat.get_float(0x2000014) && ControlModuleImpl(0x2712, 0x3) == 0x1 && global18 == 0 && ItemModuleImpl(0x4) == 0)
+    if (WorkModuleImpl.check_strans(0x1e00006f) == 0x1 && func_88() <= WorkModuleImplFloat.get_float(0x2000014) && ControlModuleImpl(0x2712, 0x3) == 0x1 && ItemModuleImpl(0x4) == 0)
     {
         func_16(0x39, 0x1);
         return;
     }
-    if (WorkModuleImpl.check_strans(0x1e00006e) == 0x1 && ControlModuleImpl(0x2712, 0x3) == 0x1 && global18 == 0 && ItemModuleImpl(0x4) == 0)
+    if (WorkModuleImpl.check_strans(0x1e00006e) == 0x1 && ControlModuleImpl(0x2712, 0x3) == 0x1 && ItemModuleImpl(0x4) == 0)
     {
         func_16(0x37, 0x1);
         return;
     }
+	if (WorkModuleImpl.check_strans(0x1e00005c) == 0x1 && ControlModuleImpl(0x2710, 0x0) == 0x1 && ControlModuleImpl(0x2710, 0xa) == 0x1 && global32 >= WorkModuleImplFloat.get_float(0x200003a))
+	{
+		func_16(0x31, 0x1);
+		return;
+	}
     if (MotionModuleImpl.is_end() == 0x1)
     {
         var0 = WorkModuleImpl.get_int(0x1300011c);

@@ -6739,11 +6739,11 @@ void func_273()
         func_16(0x37, 0x1);
         return;
     }
-	if (WorkModuleImpl.check_strans(0x1e00005c) == 0x1 && ControlModuleImpl(0x2710, 0x0) == 0x1 && ControlModuleImpl(0x2710, 0xa) == 0x1 && global32 >= WorkModuleImplFloat.get_float(0x200003a))
-	{
-		func_16(0x31, 0x1);
-		return;
-	}
+    if (WorkModuleImpl.check_strans(0x1e00005c) == 0x1 && ControlModuleImpl(0x2710, 0x0) == 0x1 && ControlModuleImpl(0x2710, 0xa) == 0x1 && global32 >= WorkModuleImplFloat.get_float(0x200003a))
+    {
+        func_16(0x31, 0x1);
+        return;
+    }
     if (MotionModuleImpl.is_end() == 0x1)
     {
         var0 = WorkModuleImpl.get_int(0x1300011c);

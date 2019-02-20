@@ -3,6 +3,7 @@ Z-drop item without using Z-air
 Ledge-hogging
 Meteor cancelling
 Remove off-the-top blast KOs
+Wiggle out of tumble
 Tripping
 Gliding
 

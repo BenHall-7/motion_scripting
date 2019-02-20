@@ -14180,11 +14180,11 @@ void func_715()
         func_16(0x7, 0x1);
         return;
     }
-    if (WorkModuleImpl.check_strans(0x1e000030) == 0x1 && global24 & 0x80000)
-    {
-        func_16(0x8, 0x1);
-        return;
-    }
+    //if (WorkModuleImpl.check_strans(0x1e000030) == 0x1 && global24 & 0x80000)
+    //{
+    //    func_16(0x8, 0x1);
+    //    return;
+    //}
     if (global24 & 0x20000 && var0 >= (float)WorkModuleImpl.get_int(0x1200000c))
     {
         func_16(0x3, 0x1);
@@ -14220,6 +14220,16 @@ void func_715()
     {
         return;
     }
+	if (CheckSlip)
+	{
+		func_16(0x84);
+		return;
+	}
+}
+
+int CheckSlip()
+{
+	return 0;
 }
 
 void func_716()
